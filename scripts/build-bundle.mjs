@@ -52,9 +52,9 @@ ENV PORT=3000
 EXPOSE 3000
 CMD bun server.js
 `);
-writeFileSync(resolve(bundle, ".dockerignore"), `public
-.git
+writeFileSync(resolve(bundle, ".dockerignore"), `.git
 .gitignore
+node_modules
 `);
 writeFileSync(resolve(bundle, "railway.json"), `${JSON.stringify({
   build: { builder: "DOCKERFILE" },
