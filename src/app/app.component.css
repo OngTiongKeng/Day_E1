@@ -1,0 +1,35 @@
+:host { display: block; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 72px 24px; }
+header { margin-bottom: 42px; }
+.eyebrow { color: #5b5bd6; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; }
+h1 { margin: 14px 0; font-size: clamp(2.4rem, 7vw, 4.5rem); line-height: 1.05; letter-spacing: -0.05em; }
+h1 span { color: #5b5bd6; }
+.intro { color: #687083; font-size: 1.1rem; }
+.shorten-form { margin-bottom: 24px; }
+label { display: block; margin-bottom: 8px; font-weight: 600; }
+.input-row { display: flex; gap: 10px; }
+input { min-width: 0; flex: 1; border: 1px solid #dfe2ea; border-radius: 10px; padding: 15px 16px; font: inherit; }
+input:focus { outline: 3px solid #dcdcff; border-color: #5b5bd6; }
+button { border: 0; border-radius: 10px; padding: 0 22px; background: #24243a; color: white; font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { cursor: wait; opacity: 0.65; }
+.notice { border-radius: 10px; margin: 18px 0; padding: 14px 16px; }
+.success { background: #edf9f2; color: #185b34; }
+.success a { color: inherit; font-weight: 700; margin-left: 6px; }
+.error { background: #fff0f0; color: #a12c2c; }
+.links-card { border: 1px solid #e5e7ee; border-radius: 14px; padding: 22px; margin-top: 34px; box-shadow: 0 8px 30px #25253a0d; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; }
+h2 { margin: 0; font-size: 1.25rem; }
+.section-heading span { color: #687083; font-size: 0.9rem; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; text-align: left; }
+th, td { border-top: 1px solid #eceef3; padding: 13px 8px; }
+th { color: #687083; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+td a { color: #4c4cc4; font-weight: 700; }
+.original-url { max-width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: #687083; margin: 28px 0 8px; }
+@media (max-width: 600px) {
+  .container { padding: 44px 16px; }
+  .input-row { flex-direction: column; }
+  button { min-height: 48px; }
+}
