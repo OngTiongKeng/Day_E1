@@ -77,3 +77,7 @@ git push
 
 Repeat the same workflow for `frontend` or `cli`. The submodule commit and the
 superproject pointer update are separate Git records.
+
+The `bundle/` submodule is generated output. Run
+`node scripts/build-bundle.mjs` from `main` to build the combined release; use
+`--push` to publish the bundle branch and its updated pointer.
